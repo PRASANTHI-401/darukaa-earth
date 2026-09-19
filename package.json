@@ -1,0 +1,22 @@
+{
+  "name": "darukaa-earth",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Darukaa.Earth - Geospatial Carbon & Biodiversity Analytics Platform",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "npm run lint --prefix frontend",
+    "format": "npx prettier --write \"frontend/src/**/*.{js,jsx,json,css}\"",
+    "format:check": "npx prettier --check \"frontend/src/**/*.{js,jsx,json,css}\""
+  },
+  "lint-staged": {
+    "frontend/src/**/*.{js,jsx,json,css}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.5"
+  }
+}
